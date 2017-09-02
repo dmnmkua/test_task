@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Lato Light';
+    src: url('Lato-Light.woff') format('woff'),
+         url('Lato-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.woff') format('woff'),
+         url('Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Lato Semibold';
+    src: url('Lato-Semibold.woff') format('woff'),
+         url('Lato-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
