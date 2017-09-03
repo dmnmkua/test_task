@@ -87,6 +87,11 @@
 .slick-slide img
 {
     display: block;
+    transition: opacity .2s;
+}
+
+.slick-slide img:hover{
+    opacity: .9;
 }
 .slick-slide.slick-loading img
 {

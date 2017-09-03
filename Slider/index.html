@@ -8,12 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
 <body>
 
 	<!-- header -->
 	<header class="header">
-	    <div class="container container--header">
+	    <div class="container header__container">
 
 	    	<!-- logo -->
 		    <div class="logo">
@@ -22,11 +23,12 @@
 		        </a>
 		    </div><!-- ./logo -->
 
-		        <!-- <div class="mobile-menu-trigger">
-		            <span></span>
-		            <span></span>
-		            <span></span>
-		        </div> -->
+			<!-- mobile-menu -->
+		    <div class="mobile-menu">
+		        <span class="mobile-menu__icon"></span>
+		        <span class="mobile-menu__icon"></span>
+		        <span class="mobile-menu__icon"></span>
+		    </div><!-- ./mobile-menu -->
 				
 				<!-- nav -->
 		    <nav class="nav">
@@ -94,7 +96,7 @@
 						
 					<!-- project desc -->
 
-					<div class="progect__desc-wrap">
+					<div class="project__desc-wrap">
 						<h3 class="title">Выполненные работы:</h3>
 						<ul class="desc__list">
 
@@ -118,12 +120,14 @@
 							</ul>
 
 						<div class="system-control">
-							<h3 class="title system-control__title">Система управления сайтом:</h3>
-							<span class="system-control__name">Opencart</span>
+							<h3 class="title system-control__title">Система управления сайтом:
+								<span class="system-control__name">Opencart</span>
+							</h3>
+							
 						</div>
 							
 
-						<button class="btn">Купить</button>
+						<a href="#form-popup" class="btn popup-with-form" class="btn">Купить</a>
 					</div><!-- ./project desc -->
 				</div>
 
@@ -156,21 +160,42 @@
 			</div><!-- ./project -->
 		</div>
 
-		<div class="modal-form">
+		<!-- modal form -->
+		<div class="modal-form white-popup mfp-hide" id="form-popup">
+
+			<h3 class="title modal-form__title">Свяжитесь с нами для приобритения шаблона</h3>
+
 			<form>
-				<h3 class="title">Свяжитесь с нами для приобритения шаблона</h3>
+					
+				<div class="modal-form__input-wrap">
+					<input class="modal-form__input" type="text" name="name" id="name" placeholder="Имя" required="">
+					<img class="modal-form__icon" src="img/name-icon.png">
+				</div>
 
-				<input class="modal-form__input" type="text" name="name" placeholder="Имя" required="">
-				<input class="modal-form__input" type="text" name="name" placeholder="Телефон">
-				<input class="modal-form__input" type="email" name="name" placeholder="E-mail" required="">
-				<input class="modal-form__input" type="text" name="name" placeholder="Skype">
+				<div class="modal-form__input-wrap">
+					<input class="modal-form__input" type="text" name="phone" placeholder="Телефон">
+					<img class="modal-form__icon" src="img/phone-icon.png">
+				</div>
 
-				<textarea class="modal-form__input modal-form__textarea" placeholder="Ваше сообщение"></textarea>
+				<div class="modal-form__input-wrap">
+					<input class="modal-form__input" type="email" name="email" placeholder="E-mail" required="">
+					<img class="modal-form__icon" src="img/mail-icon.png">
+				</div>
+
+				<div class="modal-form__input-wrap">
+					<input class="modal-form__input" type="text" name="skype" placeholder="Skype">
+					<img class="modal-form__icon" src="img/skype-icon.png">
+				</div>
+					
+				<div class="modal-form__input-wrap">
+					<textarea class="modal-form__input modal-form__textarea" placeholder="Ваше сообщение"></textarea>
+					<img class="textarea__icon" src="img/name-icon.png">
+				</div>
 
 				<button class="modal-form__btn" type="submit">Отправить</button>
 
 			</form>
-		</div>
+		</div><!-- ./modal form -->
 	</main><!-- ./main -->
 
 	<!-- footer  -->
@@ -179,7 +204,7 @@
 			<div class="footer-content">
 				<!-- logo-footer -->
 		        <div class="logo-footer">
-		            <img src="img/logo-footer.png" alt="logo">
+		            <img class="logo-footer__img" src="img/logo-footer.png" alt="logo">
 		            <span class="logo-footer__year">&copy; 2017</span>
 		        </div><!-- ./logo-footer -->
 
