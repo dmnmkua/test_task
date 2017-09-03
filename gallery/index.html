@@ -9,6 +9,8 @@
   <link rel="shortcut icon" href="img/favicon.ico">
   <!-- main.css -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- media.css -->
+  <link rel="stylesheet" href="css/media.css">
   <!-- jQuery 1.9.1 -->
   <script src="libs/jquery/jquery-1.9.1.min.js" ></script>
   <!-- Magnific Popup core JS file -->
@@ -32,7 +34,7 @@
         <div class="content content--top-header">
 
           <!-- logo -->
-          <div class="logo-wrap">
+          <div class="logo-wrap" id="logo">
 
             <a href="#" class="logo-wrap__link">
 
@@ -44,7 +46,13 @@
 
 
           <!-- navigation -->
-          <nav class="nav">
+          <nav class="nav" id="navigation">
+
+            <div class="menu" id="menu">
+              <div class="menu__item" id="block-first"></div>
+              <div class="menu__item" id="block-second"></div>
+              <div class="menu__item" id="block-third"></div>
+            </div>
 
             <ul class="nav__list">
 
@@ -52,7 +60,7 @@
 
               <li class="nav__item"><a href="#" class="nav__link">шаблон</a></li>
 
-              <li class="nav__item"><a href="#" class="nav__link">портфолио</a></li>
+              <li class="nav__item"><a href="#" class="nav__link active">портфолио</a></li>
 
               <li class="nav__item"><a href="#" class="nav__link">блог</a></li>
 
@@ -62,7 +70,7 @@
 
 
           <!-- change language -->
-          <div class="lang-block">
+          <div class="lang-block" id="lang-block">
 
             <a href="#" class="lang-block__link">ru</a>
 
@@ -89,12 +97,6 @@
         </div>
 
       </div> <!-- ./top-header -->
-
-
-
-
-
-
 
     </header> <!-- ./header -->
 
