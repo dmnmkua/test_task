@@ -73,12 +73,12 @@
   .nav__link {
     font-size: 1.5rem;
     border-top: 1px dotted #D9D9D9;
-    padding-left: 70px;
+    padding-left: 35px;
     line-height: 4rem;
   }
 
   .active:before {
-    left: 35px;
+    left: 7px;
   }
 
   .logo--hide {
@@ -96,6 +96,7 @@
 
   .maincontent {
     background: #fff url(../img/bg.png) center 270px no-repeat;
+    padding-bottom: 50px;
   }
 
   .main-nav {
@@ -195,6 +196,10 @@
   .gallery__item {
     width: 100%;
     padding-bottom: 60%;
+  }
+
+  .lang-block {
+    display: none;
   }
 
 }
