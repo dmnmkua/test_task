@@ -37,7 +37,7 @@
   background: #FCFCFC;
   padding-top: 26px;
   padding-bottom: 22px;
-  border-bottom: 2px solid #42a2e5;
+  border-bottom: 4px solid #42a2e5;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -145,10 +145,10 @@
 
 
 .hidden-btn {
+  padding: 20px 7px;
   position: absolute;
-  bottom: -60px;
+  bottom: -62px;
   right: 0;
-  width: 43px;
   height: 36px;
   background: #42a2e5;
   border-radius: 0 0 5px 5px;
@@ -156,12 +156,65 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
   border: none;
   outline: none;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.hidden-btn__search-wrap {
+  position: relative;
+  display: none;
+  margin-right: 7px;
+  transition: .3s;
+
+}
+
+.search-wrap--show {
+  display: block;
+}
+
+.hidden-btn__search-field {
+  height: 28px;
+  width: 155px;
+  padding-left: 32px;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-btn__search-icon {
+  position: absolute;
+  height: 100%;
+  top: 2px;
+  left: 0;
+  font-size: .5rem;
+  border: none;
+  background: transparent;
+  transform: rotateY(180deg) scale(1.1);
+  color: #BABABA;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.hidden-btn__search-icon:hover {
+  transform: rotateY(180deg) scale(.9);
+}
+
+.hidden-btn__icon-wrap {
+  width: 30px;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
 }
 
 .hidden-btn__icon {

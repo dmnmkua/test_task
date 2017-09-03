@@ -26,14 +26,10 @@
     <!-- header -->
     <header class="header header--open" id="header">
 
-
-
-
       <!-- top-header -->
       <div class="top-header">
 
         <div class="content content--top-header">
-
 
           <!-- logo -->
           <div class="logo-wrap">
@@ -45,8 +41,6 @@
             </a>
 
           </div> <!-- logo -->
-
-
 
 
           <!-- navigation -->
@@ -66,6 +60,7 @@
 
           </nav> <!-- ./navigation -->
 
+
           <!-- change language -->
           <div class="lang-block">
 
@@ -75,16 +70,23 @@
 
           </div> <!-- ./change language -->
 
+
           <!-- button hide           -->
-          <button class="hidden-btn" id="hidden-btn">
+          <form action="" class="hidden-btn">
 
-            <img src="img/btn-icon.png" alt="icon button" class="hidden-btn__icon" id="hidden-btn-icon">
+            <div class="hidden-btn__search-wrap search-wrap--show" id="search-wrap">
+              <input type="text" name="seach-field" class="hidden-btn__search-field">
+              <button type="submit" class="hidden-btn__search-icon">
+                <i class="material-icons">search</i>
+              </button>
+            </div>
+            <button type="button" class="hidden-btn__icon-wrap" id="hidden-btn">
+              <img src="img/btn-icon.png" alt="icon button" class="hidden-btn__icon" id="hidden-btn-icon">
+            </button>
 
-          </button> <!-- ./button hide           -->
+          </form> <!-- ./button hide           -->
 
         </div>
-
-
 
       </div> <!-- ./top-header -->
 
