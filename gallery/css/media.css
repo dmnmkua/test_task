@@ -89,6 +89,14 @@
     opacity: 0;
   }
 
+  .hidden-btn__search-wrap {
+    display: block;
+  }
+
+  .search-wrap--show {
+    display: none;
+  }
+
 
   /*
         MAIN CONTENT
