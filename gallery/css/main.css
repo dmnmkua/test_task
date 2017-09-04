@@ -489,6 +489,11 @@
   color: #7a7f83;
 }
 
+.setting__option-btn i {
+  position: relative;
+  top: 3px;
+}
+
 .setting__sheet {
   display: -webkit-flex;
   display: -ms-flex;
@@ -533,6 +538,11 @@
   background: #f2f2f2;
   padding: 0;
   cursor: pointer;
+}
+
+.setting__btn-next {
+  position: relative;
+  right: -2px;
 }
 
 
