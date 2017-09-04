@@ -108,12 +108,12 @@ button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
-  background: transparent;
   border: 0;
   -webkit-appearance: none;
   display: block;
   outline: none;
   padding: 0;
+  background: transparent;
   z-index: 1046;
   box-shadow: none;
   touch-action: manipulation; }
