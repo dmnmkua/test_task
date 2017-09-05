@@ -13,69 +13,80 @@
 <body>
 
 	<!-- header -->
-	<header class="header">
-	    <div class="container header__container">
+    <header class="header header--open" id="header">
 
-	    	<!-- logo -->
-		    <div class="logo">
-		        <a class="logo__link">
-		        	<img class="logo__img" src="img/logo.png">
-		        </a>
-		    </div><!-- ./logo -->
+      <!-- top-header -->
+      <div class="top-header">
 
-			<!-- mobile-menu -->
-		    <div class="mobile-menu">
-		        <span class="mobile-menu__icon"></span>
-		        <span class="mobile-menu__icon"></span>
-		        <span class="mobile-menu__icon"></span>
-		    </div><!-- ./mobile-menu -->
-				
-				<!-- nav -->
-		    <nav class="nav">
+        <div class="content content--top-header">
 
-		        <ul class="nav__list">
-		            <li class="nav__item">
-		                    
-		                <a class="nav__link"  href="http://wellwebsolutions.com">
-		                    <img class="hover-icon" src="img/hover-icon.png" alt="icon">
-		                    Главная</a>
-		            </li>
-		                
-		            <li class="nav__item">
-		                    
-		                <a class="nav__link" href="#">
-		                    <img class="hover-icon" src="img/hover-icon.png" alt="icon">
-		                    Шаблоны</a>
-		            </li>
+          <!-- logo -->
+          <div class="logo-wrap" id="logo">
 
-		            <li class="nav__item">
-		                    
-		                <a class="nav__link" href="#">
-		                    <img class="hover-icon" src="img/hover-icon.png" alt="icon">
-		                    Портфолио</a>
-		            </li>
+            <a href="#" class="logo-wrap__link">
 
-		            <li class="nav__item">
-		                <a class="nav__link" href="http://wellwebsolutions.com/blog">
-		                    <img class="hover-icon" src="img/hover-icon.png" alt="icon">
-		                	Блог</a>
-		            </li>
-		        </ul>
-		    </nav><!-- ./nav -->
-				
-			<!-- language switch -->
-		    <div class="language-switch">
-		        <a class="language-switch__link" href="#">RU</a>
-		        <a class="language-switch__link" href="#">EN</a>
-		    </div><!-- ./language switch -->
-		        
-		    <div class="show-hide-btn">
-		        <i class="show-hide-btn__icon"></i>
-		    </div>
+              <img src="img/logo-header.png" alt="logo" class="logo-wrap__img">
 
-	    </div>
+            </a>
 
-	</header><!-- ./header -->
+          </div> <!-- logo -->
+
+
+          <!-- navigation -->
+          <nav class="nav" id="navigation">
+
+            <div class="menu" id="menu">
+              <div class="menu__item" id="block-first"></div>
+              <div class="menu__item" id="block-second"></div>
+              <div class="menu__item" id="block-third"></div>
+            </div>
+
+            <ul class="nav__list">
+
+              <li class="nav__item"><a href="#" class="nav__link">главная</a></li>
+
+              <li class="nav__item"><a href="#" class="nav__link">шаблон</a></li>
+
+              <li class="nav__item"><a href="#" class="nav__link active">портфолио</a></li>
+
+              <li class="nav__item"><a href="#" class="nav__link">блог</a></li>
+
+            </ul>
+
+          </nav> <!-- ./navigation -->
+
+
+          <!-- change language -->
+          <div class="lang-block" id="lang-block">
+
+            <a href="#" class="lang-block__link">ru</a>
+
+            <a href="#" class="lang-block__link">en</a>
+
+          </div> <!-- ./change language -->
+
+
+          <!-- button hide           -->
+          <form action="" class="hidden-btn">
+
+            <div class="hidden-btn__search-wrap search-wrap--show" id="search-wrap">
+              <input type="text" name="seach-field" class="hidden-btn__search-field">
+              <button type="submit" class="hidden-btn__search-icon">
+                <i class="material-icons">search</i>
+              </button>
+            </div>
+            <button type="button" class="hidden-btn__icon-wrap" id="hidden-btn">
+              <img src="img/btn-icon.png" alt="icon button" class="hidden-btn__icon" id="hidden-btn-icon">
+            </button>
+
+          </form> <!-- ./button hide           -->
+
+        </div>
+
+      </div> <!-- ./top-header -->
+
+    </header> <!-- ./header -->
+
 
 	<!-- main -->
 	<main class="main">
@@ -88,8 +99,11 @@
 
 				<div class="project__item-wrap">
 
-					<div class="project__img">
-						<a class="image-popup-zoom" href="img/main-page.jpg">
+					<div class="project__img popup-gallery--main-page">
+						<a class="image-popup-zoom project__link" href="img/main-page.jpg">
+							<img src="img/main-page.jpg">
+						</a>
+						<a class="image-popup-zoom project__link" href="img/main-page.jpg">
 							<img src="img/main-page.jpg">
 						</a>
 					</div>
@@ -198,63 +212,82 @@
 		</div><!-- ./modal form -->
 	</main><!-- ./main -->
 
-	<!-- footer  -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-content">
-				<!-- logo-footer -->
-		        <div class="logo-footer">
-		            <img class="logo-footer__img" src="img/logo-footer.png" alt="logo">
-		            <span class="logo-footer__year">&copy; 2017</span>
-		        </div><!-- ./logo-footer -->
+	<!-- footer -->
+    <footer class="footer">
 
-		        <div class="nav-wrap">
+      <div class="content content--footer">
 
-					<!-- socials -->
-			        <div class="socials">
-			            <ul class="socials__list">
-			                <li class="socials__item">
-			                    <a class="socials__link socials__link--vk" href="https://vk.com/it_com_nikolaev" target="_blank"></a>
-			                </li>
-			                    
-			                <li class="socials__item">
-			                    <a class="socials__link socials__link--ok" href="https://vk.com/it_com_nikolaev" target="_blank"></a>
-			                </li>
+        <!-- footer copyright -->
+        <div class="footer__copyright">
 
-			                <li class="socials__item">
-			                    <a class="socials__link socials__link--fb" href="https://vk.com/it_com_nikolaev" target="_blank"></a>
-			                </li>
+          <img src="img/logo-footer.png" alt="logo footer" class="footer__copyright-img"><span class="footer__copyright-text">&copy 2017</span>
 
-			                <li class="socials__item">
-			                    <a class="socials__link socials__link--tw" href="https://www.facebook.com/groups/it.com.nikolaev/" target="_blank"></a>
-			                </li>
-			            </ul>
-			        </div><!-- ./socials -->
+        </div> <!-- ./footer copyright -->
 
-					<!-- footer-nav -->
-			        <nav class="footer-nav">
-			            <ul class="footer-nav__list">
-			                <li class="footer-nav__item">
-					            <a class="footer-nav__link" href="http://wellwebsolutions.com">Главная</a>
-					        </li>
-					                
-					        <li class="footer-nav__item">
-					            <a class="footer-nav__link" href="#">Шаблоны</a>
-					        </li>
+        <!-- footer links -->
+        <div class="footer__links">
 
-					        <li class="footer-nav__item">
-					            <a class="footer-nav__link" href="#">Портфолио</a>
-					        </li>
+          <!-- footer social -->
+          <div class="footer__social social">
 
-					        <li class="footer-nav__item">
-					            <a class="footer-nav__link" href="http://wellwebsolutions.com/blog">Блог</a>
-					        </li>
-			            </ul>
-			        </nav><!-- ./footer-nav -->
-		        </div>
-	        </div>
-	    </div>
-	</footer><!-- ./footer  -->
+            <ul class="social__list">
+
+              <li class="social__item">
+                <a href="#" class="social__link vk">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a href="#" class="social__link ok">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-odnoklassniki fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a href="#" class="social__link fb">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a href="#" class="social__link tw">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+
+            </ul>
+
+          </div> <!-- footer social -->
+
+          <nav class="footer__nav">
+
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">главная</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">шаблоны</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">портфолио</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">блог</a></li>
+            </ul>
+
+          </nav>
+
+        </div> <!-- ./footer links -->
+
+      </div>
+
+    </footer> <!-- ./footer -->
 
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

@@ -1,21 +1,35 @@
+
+
+window.onload = function() {
+  var hiddenBtn = document.querySelector("#hidden-btn");
+  var header = document.querySelector("#header");
+  var icon = document.querySelector("#hidden-btn-icon")
+  var searchField = document.querySelector("#search-wrap");
+  var menu = document.querySelector("#menu");
+  var logo = document.querySelector("#logo");
+  var navigation = document.querySelector("#navigation");
+  var langBlock = document.querySelector("#lang-block");
+  var menuItem = document.querySelectorAll(".menu__item");
+
+
+  hiddenBtn.addEventListener("click", function() {
+    header.classList.toggle("header--open");
+    icon.classList.toggle('hidden-btn__icon--transform');
+    searchField.classList.toggle("search-wrap--show");
+  })
+
+  menu.addEventListener("click", function() {
+    navigation.classList.toggle("nav--open");
+    logo.classList.toggle("logo--hide");
+    langBlock.classList.toggle('lang-block--mobile');
+    menuItem[0].classList.toggle('menu__item--first');
+    menuItem[1].classList.toggle('menu__item--second');
+    menuItem[2].classList.toggle('menu__item--third');
+  })
+} 
+
+
 $(document).ready(function(){
-
-	// mobile detection
-
-	var mobile = 1;
-	if( $(window).width() > 767 ){
-		mobile = 0;
-	}
-
-	if(mobile == 1){
-		$('main').addClass('upside');
-		$('header').addClass('hidden');
-	}
-
-	$('.mobile-menu').click(function() {
-		$(this).parent().toggleClass('header__container--active');
-		$('body').toggleClass('scroll-off');
-	});
 
 	// slider
   	
@@ -48,14 +62,18 @@ $(document).ready(function(){
     	]	
 	});
 
-  	// popup
-  	$('.image-popup-zoom').magnificPopup({
-	 type: 'image',
-	 zoom: {
-	     enabled: true,
-	     duration: 300
-	 	}
-	 });
+   $('.popup-gallery--main-page').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    removalDelay: 100,
+    mainClass: 'my-mfp-zoom-in',
+    tLoading: 'Загрузка изображения #%curr%...',
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+    }
+  });
 
   	// popup gallery
   	$('.popup-gallery').magnificPopup({
@@ -71,15 +89,6 @@ $(document).ready(function(){
  		}
  	});
 
-
-
- 	// header
-
- 	$('.show-hide-btn').click(function() {
- 			$('.show-hide-btn__icon').toggleClass('active');
-			$('.header').toggleClass('hidden');
-			$('.main').toggleClass('upside');
-		});
 
  	// popup form
 
