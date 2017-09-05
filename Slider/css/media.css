@@ -77,6 +77,14 @@
     display: none;
   }
 
+   .hidden-btn__icon {
+    transform: scale(1.1);
+  }
+
+  .hidden-btn__icon--transform {
+    transform: scale(.9) rotate(180deg);
+  }
+
   .lang-block{
 		position: absolute;
     	opacity: 0;
