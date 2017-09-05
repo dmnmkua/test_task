@@ -550,11 +550,7 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .setting__btn-next i {
-=======
-.setting__btn-next {
->>>>>>> f99f53a30cda426eacf9ab455c1f22be83d5d1c7
   position: relative;
   right: -2px;
 }
