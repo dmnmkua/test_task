@@ -130,7 +130,7 @@ html, body{
   height: 14px;
   position: absolute;
   left: -4px;
-  top: 50%;
+  top: 46%;
   transform: translateY(-50%);
   transform-origin: center;
   opacity: 0;
@@ -154,7 +154,7 @@ html, body{
   height: 14px;
   position: absolute;
   left: -4px;
-  top: 50%;
+  top: 46%;
   transform: translateY(-50%);
   opacity: 1;
   background-image: url(../img/before.png);
