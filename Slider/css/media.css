@@ -1,32 +1,17 @@
 @media screen and (max-width: 999px){
 
+	.content {
+    	padding: 0 20px;
+  	}
+
 	.container{
 		max-width: 768px;
 	}
 
-	.header{
-		padding: 11px 0;
-	}
-
-	.header.hidden{
-		top: -86px;
-	}
-
-	.logo__img{
-		max-width: 180px;
-	}
-
-	.nav__item{
-		font-size: 1rem;
-	}
-
-	.nav__link:active{
-		color: #90ba43;
-	}
-
-	.show-hide-btn{
-		bottom: -49px;
-	}
+	.hidden-btn {
+    	position: absolute;
+    	right: 20px;
+  	}
 
 	.main{
 		padding-top: 100px;
@@ -49,11 +34,108 @@
 		max-width: 682px;
 	}
 
-	.footer-nav__item{
-		margin-right: 20px;
-		font-size: .9375rem;
-	}
 }
+
+@media screen and (max-width: 850px) {
+
+
+  /*
+        HEADER
+  */
+  .header {
+    margin-top: 0px;
+  }
+
+  .header--open {
+    margin-top: -124px;
+  }
+
+  .content--top-header {
+    flex-wrap: wrap;
+  }
+
+  .logo-wrap {
+    order: 1;
+    transition: opacity .5s ease-out;
+  }
+
+  .nav {
+    order: 3;
+    right: 0;
+    background: #fff;
+  }
+
+  .nav--open {
+    right: 70%;
+  }
+
+  .lang-block{
+		position: absolute;
+    	opacity: 0;
+    	transition: all .5s;
+    	right: -100px;
+	}
+
+  .menu {
+    display: block;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 0;
+    right: -700px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #fff;
+    z-index: 999;
+    width: 680px;
+    justify-content: flex-start;
+    margin-top: 84px;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .nav__link {
+    font-size: 1.5rem;
+    border-top: 1px dotted #D9D9D9;
+    padding-left: 35px;
+    line-height: 4rem;
+  }
+
+  .active:before {
+    left: 7px;
+  }
+
+  .logo--hide {
+    opacity: 0;
+  }
+
+  .lang-block--mobile {
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+  }
+
+  .lang-block--mobile .lang-block__link{
+  	font-size: 1.25rem;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
+  }
+
+  .content--footer {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-align-items: center;
+    align-items: center;
+  }
 
 @media screen and (max-width: 767px){
 
@@ -61,74 +143,8 @@
 		width: 100%;
 	}
 
-	.header{
-		border-bottom: 2px solid #42a2e5;
-		padding: 14px 0;
-	}
-
-	.header.hidden{
-		top: -87px;
-	}
-
-	.logo__img{
-		max-width: 165px;
-	}
-
-	.nav{
-		position: absolute;
-    	top: 73px;
-    	right: -100%;
-    	width: 70%;
-    	height: calc(100vh - 73px);
-    	background-color: #fff;
-    	z-index: 10;
-    	transition: all .5s;
-	}
-
-	.nav__list{
-		height: 100%;
-	}
-
-	.nav__item{
-		height: 25%;
-    	margin: 0 15px 0 8px;
-    	display: block;
-    	background: none;
-    	padding: 0;
-    	border-top: 1px dotted #D9D9D9;
-    	position: relative;
-	}
-
-	.nav__link{
-		padding: 0;
-		font-size: 1.3125rem;
-    	position: absolute;
-    	top: 50%;
-    	left: 30px;
-    	transform: translate(0, -50%);
-	}
-
-	.nav__link:active{
-		color: #90ba43;
-	}
-
-	.language-switch{
-		position: absolute;
-    	right: -100%;
-    	opacity: 0;
-    	transition: all .5s; 
-	}
-
-	.mobile-menu{
-		position: relative;
-    	display: block;
-    	right: 0;
-    	transition: all .5s;
-    	cursor: pointer;
-	}
-
-	.show-hide-btn{
-		bottom: -49px;
+	.main{
+		padding-top: 115px;
 	}
 
 	.project__item-wrap{
@@ -148,47 +164,25 @@
 		width: 380px;
 	}
 
-	.footer{
-		padding: 12px 0;
-	}
+}
 
-	.logo-footer__img{
-		max-width: 190px;
-	}
+@media screen and (max-width: 480px) {
 
-	.logo-footer__year{
-		font-size: 0.875rem;
-	}
+  .footer__nav-list {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
 
-	.footer-content{
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.footer-nav{
-		display: none;
-	}
-	
-	.nav-wrap{
-		width: 100%;
-		margin-top: 10px;
-	}
-
-	.socials__item{
-		margin-right: 10px;
-	}
+  .footer__nav-link {
+    line-height: 2.3rem;
+  }
 }
 
 @media screen and (max-width: 427px){
 
-	.nav__item{
-		height: 17%;
-	}
-
-	.main{
-		padding-top: 80px;
-	}
 
 	.upside{
 		padding-top: 0;
