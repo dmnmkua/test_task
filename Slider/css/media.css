@@ -69,6 +69,14 @@
     right: 75%;
   }
 
+  .hidden-btn__search-wrap {
+    display: block;
+  }
+
+  .search-wrap--show {
+    display: none;
+  }
+
   .lang-block{
 		position: absolute;
     	opacity: 0;
