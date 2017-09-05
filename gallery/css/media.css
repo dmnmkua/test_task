@@ -42,12 +42,24 @@
   }
 
   .nav--open {
-    right: 70%;
+    right: 75%;
   }
 
-  .lang-block {
-    order: 2;
-    transition: opacity .5s ease-out;
+  .lang-block{
+    position: absolute;
+    opacity: 0;
+    transition: all .5s;
+    right: -100px;
+  }
+
+  .lang-block--mobile {
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+  }
+
+ .lang-block--mobile .lang-block__link{
+      font-size: 1.25rem;
   }
 
   .menu {
@@ -204,10 +216,6 @@
   .gallery__item {
     width: 100%;
     padding-bottom: 60%;
-  }
-
-  .lang-block {
-    display: none;
   }
 
 }

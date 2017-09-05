@@ -38,7 +38,7 @@
 */
 
 .top-header {
-  background: #FCFCFC;
+  background: #fff;
   padding-top: 26px;
   padding-bottom: 22px;
   border-bottom: 4px solid #42a2e5;
@@ -114,7 +114,7 @@
   height: 14px;
   position: absolute;
   left: -4px;
-  top: 50%;
+  top: 46%;
   transform: translateY(-50%);
   transform-origin: center;
   opacity: 0;
@@ -138,13 +138,14 @@
   height: 14px;
   position: absolute;
   left: -4px;
-  top: 50%;
+  top: 46%;
   transform: translateY(-50%);
   opacity: 1;
   background-image: url(../img/before.png);
 }
 
 .menu {
+  background: transparent;
   width: 50px;
   display: none;
 }
@@ -339,7 +340,12 @@
   display: block;
 }
 
-.nav-bottom__link:hover {
+.nav-bottom__link:hover,
+ {
+  color: #42a2e5;
+}
+
+.nav-bottom__link--active {
   color: #42a2e5;
 }
 
@@ -347,8 +353,8 @@
   content: "//";
   margin: 0 10px;
   color: #989898;
+  text-decoration: none;
 }
-
 
 
 
@@ -366,6 +372,7 @@
   padding: 80px 0 60px 0;
   margin: 0;
   list-style: none;
+  transition: all 1s;
 }
 
 .gallery__item {
@@ -377,6 +384,7 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  transition: all 1s;
 }
 
 .gallery__img {
@@ -417,7 +425,9 @@
   opacity: 1;
 }
 
-
+.gallery__item--hide {
+  display: none;
+}
 
 
 
@@ -489,6 +499,11 @@
   color: #7a7f83;
 }
 
+.setting__option-btn i {
+  position: relative;
+  top: 3px;
+}
+
 .setting__sheet {
   display: -webkit-flex;
   display: -ms-flex;
@@ -533,6 +548,11 @@
   background: #f2f2f2;
   padding: 0;
   cursor: pointer;
+}
+
+.setting__btn-next i {
+  position: relative;
+  right: -2px;
 }
 
 
