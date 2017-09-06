@@ -369,15 +369,17 @@
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 80px 0 60px 0;
   margin: 0;
   list-style: none;
   transition: all 1s;
+  margin-right: -1%;
+  margin-left: -1%;
 }
 
 .gallery__item {
-  width: 24%;
+  width: 23%;
   padding-bottom: 15%;
   margin-bottom: 20px;
   overflow: hidden;
@@ -386,6 +388,8 @@
   display: -ms-flex;
   display: flex;
   transition: all 1s;
+  margin-right: 1%;
+  margin-left: 1%;
 }
 
 .gallery__img {
