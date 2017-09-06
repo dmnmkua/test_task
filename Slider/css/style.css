@@ -290,6 +290,7 @@ html, body{
   transition: all .5s ease-out;
   transform: scale(.9);
   transform-origin: center;
+	flex-shrink: 0;
 }
 
 .hidden-btn__icon--transform {
@@ -562,7 +563,7 @@ html, body{
 
 .my-mfp-zoom-in .zoom-anim-dialog{
 	opacity: 0;
-	transition: all 0.3s; 
+	transition: all 0.3s;
 }
 
 .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog{

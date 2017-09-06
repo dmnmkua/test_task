@@ -280,6 +280,7 @@
   transition: all .5s ease-out;
   transform: scale(.9);
   transform-origin: center;
+  flex-shrink: 0;
 }
 
 .hidden-btn__icon--transform {
