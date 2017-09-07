@@ -380,7 +380,7 @@
 
 .gallery__item {
   width: 23%;
-  padding-bottom: 15%;
+  /*padding-bottom: 15%;*/
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
@@ -398,7 +398,7 @@
   top: 0;
   left: 0;
   transition: .5s;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .gallery__item:hover .gallery__img {
