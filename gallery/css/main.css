@@ -431,7 +431,11 @@
 }
 
 .gallery__item--hide {
-  display: none;
+  width: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
