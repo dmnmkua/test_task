@@ -388,6 +388,8 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  -ms-align-self: center;
+  align-self: center;
   transition: all 1s;
   margin-right: 1%;
   margin-left: 1%;
