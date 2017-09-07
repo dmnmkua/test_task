@@ -381,6 +381,7 @@
 .gallery__item {
   width: 23%;
   /*padding-bottom: 15%;*/
+  height: 150px;
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
@@ -398,7 +399,7 @@
   top: 0;
   left: 0;
   transition: .5s;
-  /*position: absolute;*/
+  position: absolute;
 }
 
 .gallery__item:hover .gallery__img {
@@ -412,6 +413,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   z-index: 10;
   transition: all .5s;
   opacity: 0;
@@ -432,10 +434,12 @@
 
 .gallery__item--hide {
   width: 0;
-  padding-bottom: 0;
+  height: 0;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+  transform: scale(0);
+  transform-origin: bottom;
 }
 
 
